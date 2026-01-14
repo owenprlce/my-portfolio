@@ -56,7 +56,7 @@ function Portrait({ initTransistion, initOpacity }) {
                     <div className={`w-full h-full rounded-full outline-2 outline-amber-300 flex justify-start items-center`}>
                         <img
                             className="p-2 w-full h-full rounded-full object-cover"
-                            src={`${import.meta.env.BASE_URL}headshot/me.jpeg`}
+                            src={`${import.meta.env.BASE_URL}/headshot/me.jpeg`}
                             alt={'Portrait'}
                             loading='lazy'
                         />

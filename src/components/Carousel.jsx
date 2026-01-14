@@ -4,29 +4,29 @@ import '@splidejs/react-splide/css'
 export default function GalleryCarousel() {
 
     const IMAGES_HIGH_RES = [
-        { URL: 'images_high_res/diamondhead.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
-        { URL: 'images_high_res/landscape.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
-        { URL: 'images_high_res/lighthouse.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
-        { URL: 'images_high_res/mountain.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
-        { URL: 'images_high_res/palmtree.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
+        { URL: '/images_high_res/diamondhead.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
+        { URL: '/images_high_res/landscape.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
+        { URL: '/images_high_res/lighthouse.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
+        { URL: '/images_high_res/mountain.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
+        { URL: '/images_high_res/palmtree.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
 
     ]
 
     const IMAGES_MED_RES = [
-        { URL: 'images_med_res/diamondhead_med.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
-        { URL: 'images_med_res/landscape_med.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
-        { URL: 'images_med_res/lighthouse_med.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
-        { URL: 'images_med_res/mountain_med.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
-        { URL: 'images_med_res/palmtree_med.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
+        { URL: '/images_med_res/diamondhead_med.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
+        { URL: '/images_med_res/landscape_med.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
+        { URL: '/images_med_res/lighthouse_med.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
+        { URL: '/images_med_res/mountain_med.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
+        { URL: '/images_med_res/palmtree_med.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
 
     ]
 
     const IMAGES_MED_RES_BW = [
-        { URL: 'images_med_res_bw/diamondhead_med_bw.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
-        { URL: 'images_med_res_bw/landscape_med_bw.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
-        { URL: 'images_med_res_bw/lighthouse_med_bw.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
-        { URL: 'images_med_res_bw/mountain_med_bw.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
-        { URL: 'images_med_res_bw/palmtree_med_bw.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
+        { URL: '/images_med_res_bw/diamondhead_med_bw.jpeg', ALT: 'Diamond Head', CAP: 'LĒʻAHI CRATER' },
+        { URL: '/images_med_res_bw/landscape_med_bw.jpeg', ALT: 'Landscape', CAP: 'JONSRUD VIEWPOINT' },
+        { URL: '/images_med_res_bw/lighthouse_med_bw.jpeg', ALT: 'Lighthouse', CAP: 'LĒʻAHI LIGHTHOUSE' },
+        { URL: '/images_med_res_bw/mountain_med_bw.jpeg', ALT: 'Mountain', CAP: 'GOVERNMENT CAMP' },
+        { URL: '/images_med_res_bw/palmtree_med_bw.jpeg', ALT: 'Palm Tree', CAP: 'WAIKĪKĪ BEACH' },
 
     ]
 
