@@ -38,7 +38,7 @@ function MailForm() {
         e.preventDefault();
 
         try {
-            const res = await fetch("https://YOUR_VERCEL_BACKEND_URL/api/sendMail", {
+            const res = await fetch("https://my-portfolio-564dwgpdb-owen-prices-projects.vercel.app/api/sendMail", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(form),
