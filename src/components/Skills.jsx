@@ -1,13 +1,16 @@
 export default function SkillsSection() {
     return (
-        <div className='w-screen h-[40vh] bg-zinc-800'>
-            <div className='w-full h-full relative'>
-                <div>
-                    <div className='w-9/12 h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <Skills />
-                    </div>
+        <div className='w-screen min-h-[20vh] flex justify-center items-center'>
+            <div className='w-9/12 h-full'>
+                <div className="hidden md:flex">
+                    <Skills />
                 </div>
 
+                <div className="flex md:hidden">
+                    <div className="w-full h-[40vh] rounded-2xl bg-white/20 flex justify-center items-center">
+                        <p className="zalando-sans text-5xl text-amber-300">Coming soon</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

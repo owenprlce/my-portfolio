@@ -15,7 +15,7 @@ export default function Anchors( { one, two, three, four }) {
   };
 
   return (
-    <div className="fixed z-20 w-screen h-[10vh]">
+    <div className="fixed bg-zinc-800 z-20 w-screen h-[10vh] hidden xl:flex">
       <div className="w-full h-full flex justify-end items-center gap-x-8 text-amber-300 p-4 pr-16 zalando-sans">
         <a className={`w-[60px] text-center ${one ? 'ease-in duration-300 opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}`} href="#home" onClick={(e) => handleClick(e, "#home")}>Home</a>
         <a className={`w-[60px] text-center ${two ? 'ease-in duration-300 opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}`} href="#projects" onClick={(e) => handleClick(e, "#projects")}>Projects</a>

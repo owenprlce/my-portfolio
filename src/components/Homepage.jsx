@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 
-  // Organized Component Imports
-  import { Footer, SectionPartition, SectionTitlePartition } from './Partition';
-  import HeroSection from './HeroSection';
-  import ProjectSection from './Projects';
-  import GallerySection from './Gallery';
-  import SkillsSection from './Skills';
-  import Fixed from './Fixed';
-  import Anchors from './Anchors';
+// Organized Component Imports
+import { Footer, SectionPartition, SectionTitlePartition, LinkHeader } from './Partition';
+import SocialsComponent from './SocialsComponent'
+import HeroSectionNew from './HeroSection';
+import ProjectSection from './Projects';
+import GallerySection from './Gallery';
+import SkillsSection from './Skills';
+import Fixed from './Fixed';
+import Anchors from './Anchors';
 
 
 function Homepage() {
@@ -46,33 +47,36 @@ function Homepage() {
 
   return (
     <>
-      <Anchors 
-        one={staggerAnchor.anchorOne} 
-        two={staggerAnchor.anchorTwo} 
-        three={staggerAnchor.anchorThree} 
+      <Anchors
+        one={staggerAnchor.anchorOne}
+        two={staggerAnchor.anchorTwo}
+        three={staggerAnchor.anchorThree}
         four={staggerAnchor.anchorFour} />
 
       <SectionTitlePartition id={'home'} styling={'bg-zinc-800'} />
-      <HeroSection />
+      <LinkHeader sidebar={sidebar} setSidebar={setSidebar} setShowMail={setShowMail} />
+    
+      <HeroSectionNew />
+
 
       <>
-        <div className={`${showPage ? 'opacity-100' : 'fixed opacity-0'}`}>
+        <div className={`bg-zinc-800 transition-opacity duration-0 ${showPage ? 'opacity-100' : 'fixed opacity-0'}`}>
 
-            {/* Project Section */}
-            <SectionTitlePartition id={'projects'} height={'h-[20vh]'} styling={'bg-zinc-800 mt-96'} title={'Projects'} />
-            <ProjectSection />
+          {/* Project Section */}
+          <SectionTitlePartition id={'projects'} height={'h-[20vh]'} styling={'my-14 md:my-18'} title={'Projects'} />
+          <ProjectSection />
 
-            {/* Gallery Section */}
-            <SectionTitlePartition id={'gallery'} height={'h-[20vh]'} styling={'bg-zinc-800 mt-96'} title={'Gallery'} />
-            <GallerySection />
+          {/* Gallery Section */}
+          <SectionTitlePartition id={'gallery'} height={'h-[20vh]'} styling={'my-14 md:my-18'} title={'Gallery'} />
+          <GallerySection />
 
-            {/* Skills Section */}
-            <SectionTitlePartition id={'skills'} height={'h-[20vh]'} styling={'bg-zinc-800 mt-96'} title={'Skills'} />
-            <SkillsSection />
+          {/* Skills Section */}
+          <SectionTitlePartition id={'skills'} height={'h-[20vh]'} styling={'my-14 md:my-18'} title={'Skills'} />
+          <SkillsSection />
 
-            {/* Footer Section */}
-            <Footer height={'h-[30vh]'} styling={'bg-zinc-800'} />
-          
+          {/* Footer Section */}
+          <Footer height={'h-[15vh]'} styling={'bg-zinc-800'} />
+
         </div>
 
         <Fixed sidebar={sidebar} setSidebar={setSidebar} showMail={showMail} setShowMail={setShowMail} />

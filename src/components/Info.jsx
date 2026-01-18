@@ -30,7 +30,7 @@ export default function Info() {
 
     return (
         <>
-                <div className={`fixed bottom-4 right-4 transform transition-[transform, opacity] ease-in-out 
+                <div className={`fixed bottom-4 right-4 transform transition-[transform, opacity] ease-in-out hidden xl:flex
                                     ${showInfoBool ? 'duration-300 translate-x-0' : 'duration-700 translate-x-full'}
                                     ${visible ? 'opacity-100' : 'opacity-0'}`}>
                     <div className="size-96 relative rounded-xl">

@@ -34,6 +34,7 @@ export default function GalleryCarousel() {
         <>
             <Splide
                 options={{
+                    autoHeight: true,
                     type: 'loop',
                     speed: 1000,
                     autoplay: true,
@@ -41,6 +42,7 @@ export default function GalleryCarousel() {
                     // // rewind: true,
                     // rewindByDrag: false,
                     drag: false,
+                    direction: 'ltr',
                     pauseOnHover: false,
                     perMove: 1,
                     gap: '3rem',
@@ -48,12 +50,30 @@ export default function GalleryCarousel() {
                     perPage: 3,
                     arrows: false,
                     pagination: false,
+
+                    breakpoints: {
+                        1280: {
+                            perPage: 2,
+                            focus: false,
+                        },
+                        1024: {
+                            perPage: 2,
+                            focus: false,
+                        },
+                        768: {
+                            perPage: 1,
+                            focus: false,
+                        },
+                        640: {
+                            perPage: 1,
+                        },
+                    }
                 }}
             >
                 {IMAGES_MED_RES.map(({ URL, ALT, CAP }, idx) => (
 
                     <SplideSlide key={idx}>
-                        <div className='flex flex-col bg-white/20 backdrop-blur-xl overflow-hidden p-6 rounded-md'>
+                        <div className='h-full w-full flex flex-col bg-white/20 backdrop-blur-xl overflow-hidden p-6 rounded-md'>
                             <div className='slide'>
                                 <img
                                     src={`${import.meta.env.BASE_URL}${URL}`}
@@ -78,10 +98,10 @@ export default function GalleryCarousel() {
     );
 }
 
-export function VerticalTextCarousel() {
+export function VerticalTextCarouselNew() {
 
     const WORDS = [
-        "Software Developer",
+        "Software Development",
         "UI/UX Enthusiast",
         "Pixel Perfect",
         "Vibe Coding",
@@ -93,13 +113,13 @@ export function VerticalTextCarousel() {
         <>
             <Splide
                 options={{
-                    height: '240px',
+                    height: '120px',
                     type: 'loop',
-                    speed: 700,
+                    speed: 500,
                     autoplay: true,
-                    interval: 3500,
+                    interval: 3000,
                     rewind: false,
-                    drag: false,
+                    drag: true,
                     perMove: 1,
                     gap: '3rem',
                     focus: 'center',
@@ -107,14 +127,52 @@ export function VerticalTextCarousel() {
                     perPage: 1,
                     arrows: false,
                     pagination: false,
-                    start: 0
+                    start: 0,
+
+                    breakpoints: {
+                        2560: {
+                            height: '240px'
+                        },
+
+                        1280: {
+                            height: '240px'
+                        },
+                        1024: {
+                            height: '210px'
+                        },
+                        768: {
+                            height: '180px'
+                        },
+                        640: {
+                            height: '150px' 
+                        },
+                    }
+
+                
                 }}
             >
                 {WORDS.map((word, idx) => (
 
                     <SplideSlide key={idx}>
-                        <div className='w-full h-full flex justify-end items-end'>
-                            <p className='text-right w-full p-8 text-9xl zalando-sans'>{word}</p>
+                        <div className='w-full h-full z-10 flex justify-center items-center xl:justify-end xl:items-end'>
+                            <p className='p-8 text-center xl:text-right
+                                        
+
+                                         w-full
+
+                                         text-6xl
+                                         sm:text-6xl
+                                         md:text-7xl
+                                         lg:text-7xl
+                                         xl:text-7xl
+                                         md:landscape:text-8xl
+                                         lg:landscape:text-8xl
+                                         2xl:landscape:text-9xl
+                                         leading-tight
+                                         
+                                         
+                                         
+                                         zalando-sans text-amber-300'>{word}</p>
                         </div>
                     </SplideSlide>
 
