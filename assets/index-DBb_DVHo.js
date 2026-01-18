@@ -82,13 +82,9 @@ Error generating stack: `+l.message+`
                                 
                                 p-6
 
-                                overflow-hidden
-                
-                                transform-gpu will-change-transform
-                                
                                 transition-all
-                                
-                                ${b?"duration-700 ease-in-out":"duration-300 ease-in"}`,children:[h.jsx(vy,{initTransistion:i,initOpacity:r}),h.jsx(my,{initTransition:i,carousel:S})]})})}function vy({initTransistion:i,initOpacity:s}){return h.jsx("div",{className:`flex justify-center items-end xl:justify-end xl:items-center
+                            
+                               `,children:[h.jsx(vy,{initTransistion:i,initOpacity:r}),h.jsx(my,{initTransition:i,carousel:S})]})})}function vy({initTransistion:i,initOpacity:s}){return h.jsx("div",{className:`flex justify-center items-end xl:justify-end xl:items-center
 
                         w-full h-auto md:w-full xl:w-1/2 xl:h-9/12 2xl:h-10/12            
                         
@@ -100,13 +96,13 @@ Error generating stack: `+l.message+`
                             
                             border-2 border-amber-300 border-b-transparent xl:border-b-amber-300 xl:rounded-t-none xl:rounded-tr-none xl:border-r-transparent  
                             
-                            -mb-[2px] xl:m-[0px] xl:-mr-[2px] xl:overflow-hidden
+                            -mb-[2px] xl:m-[0px] xl:-mr-[2px] overflow-hidden
 
                             transition-all
                             
                             ${i?"rounded-tl-[200px] rounded-tr-[200px] md:rounded-tl-[300px] md:rounded-tr-[300px] lg:rounded-tl-[300px] lg:rounded-tr-[300px] xl:rounded-l-[260px] 2xl:rounded-l-[420px] duration-1000 translate-y-0 xl:translate-y-0 xl:translate-x-0 ease-in-out":"translate-y-full xl:-translate-y-0 xl:translate-x-full rounded-tr-2xl rounded-tl-2xl"}`,children:h.jsxs("div",{className:`xl:hover-3d p-8 2xl:p-12
                 
-                                h-full w-full
+                                h-full aspect-square
 
                                 flex justify-center items-center
                                 
@@ -114,7 +110,7 @@ Error generating stack: `+l.message+`
                                 
                                 transition-opacity
                                 
-                                ${s?"duration-300 ease-in opacity-100":"opacity-0"}`,children:[h.jsx("div",{className:"h-full aspect-square rounded-full outline-2 outline-amber-300",children:h.jsx("img",{className:"w-full h-full object-cover rounded-full",src:"/my-portfolio/headshot/me.jpeg",alt:"Portrait",loading:"lazy"})}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})})})}function my({initTransition:i,carousel:s}){return h.jsx("div",{className:`flex justify-center items-start xl:justify-start xl:items-center
+                                ${s?"duration-300 ease-in opacity-100":"opacity-0"}`,children:[h.jsx("div",{className:"h-full w-full rounded-full outline-2 outline-amber-300",children:h.jsx("img",{className:"w-full h-full object-cover rounded-full",src:"/my-portfolio/headshot/me.jpeg",alt:"Portrait",loading:"lazy"})}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})})})}function my({initTransition:i,carousel:s}){return h.jsx("div",{className:`flex justify-center items-start xl:justify-start xl:items-center
 
                         w-full h-auto md:h-3/12 md:w-full xl:w-1/2 xl:h-9/12 2xl:h-10/12
 
@@ -126,7 +122,7 @@ Error generating stack: `+l.message+`
             
                             border-2 border-amber-300 rounded-b-2xl xl:rounded-bl-none border-t-transparent xl:border-t-amber-300 xl:rounded-r-2xl xl:border-l-transparent 
                             
-                            -mt-[2px] xl:m-0  xl:-ml-[2px] overflow-y-hidden xl:overflow-y-hidden
+                            -mt-[2px] xl:m-0  xl:-ml-[2px] overflow-hidden
                             
                             ${i?"duration-1000 -translate-y-0 xl:translate-y-0  xl:translate-x-0 ease-in-out":"-translate-y-full xl:translate-y-0 xl:-translate-x-full"}`,children:h.jsx("div",{className:`flex items-center justify-center xl:justify-end xl:items-end
 
@@ -136,7 +132,7 @@ Error generating stack: `+l.message+`
                                 
                                 transition-transform 
                                 
-                                overflow-x-hidden
+                                overflow-hidden
                                 
                                 ${s?"ease-in-out duration-500 translate-y-0 translate-x-0 xl:translate-y-0":"translate-y-full xl:translate-x-0 xl:translate-y-full"}`,children:h.jsx(dy,{})})})})}function gy(){return h.jsx("div",{className:"w-screen flex justify-center items-center",children:h.jsx("div",{className:"w-9/12 h-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-12",children:h.jsx(yy,{})})})}function yy(){const[i,s]=ht.useState(!1),[r,f]=ht.useState(!1),[g,x]=ht.useState(!1),[b,z]=ht.useState(!1),[S,m]=ht.useState(!1),[E,w]=ht.useState(!1),[R,C]=ht.useState(!1),[D,j]=ht.useState(!1);return ht.useEffect(()=>{if(!i){f(!1),x(!1),z(!1);return}const Y=setInterval(()=>{f(!0),x(!0)},4e3);return()=>{clearInterval(Y)}},[i]),ht.useEffect(()=>{if(!g)return;const Y=setInterval(()=>{z(!0)},400);return()=>{clearInterval(Y)}},[g]),ht.useEffect(()=>{if(!S){w(!1),C(!1),j(!1);return}const Y=setInterval(()=>{w(!0),C(!0)},4e3);return()=>{clearInterval(Y)}},[S]),ht.useEffect(()=>{if(!R)return;const Y=setInterval(()=>{j(!0)},400);return()=>{clearInterval(Y)}},[R]),h.jsxs(h.Fragment,{children:[h.jsx("div",{className:"w-full h-full cursor-pointer",onClick:()=>window.open("https://github.com/TooshieTom/Billingsley-Eviction-Risk-Dashboard","_blank"),children:h.jsxs("div",{onMouseEnter:()=>s(!0),onMouseLeave:()=>s(!1),className:"w-full h-full hover-3d transform-gpu will-change-transform",children:[h.jsx(j0,{image:"https://www.billingsleyco.com/wp-content/uploads/2022/02/BCO-Logo-White.svg",background:"bg-[#101820]",hoverBackground:"bg-white",progressBar:"h-[6px] bg-white",progressBarState:i,projectInfo:r,title:"Eviction Risk Insights Dashboard",description:"Internal web application with predictive modeling to estimate eviction risk and simulate screening policy changes",bulletPoints:["Developed React-based front-end architecture with client-side routing","Implemented secure user authentication with hashing and salting","Designed intuitive property-to-resident drill-down workflows","Enabled data-driven dashboards and screening scenario simulations"],hoverText:"text-[#101820]",textTransitionState:b}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})}),h.jsx("div",{className:"w-full h-full cursor-pointer",onClick:()=>window.open("https://owenprlce.github.io/textual-tennis/","_blank"),children:h.jsxs("div",{onMouseEnter:()=>m(!0),onMouseLeave:()=>m(!1),className:"w-full h-full hover-3d transform-gpu will-change-transform",children:[h.jsx(j0,{name:"Textual Tennis",background:"bg-zinc-300",hoverBackground:"bg-zinc-700",font:"text-zinc-700 pacifico-regular",progressBar:"h-[6px] bg-zinc-700",progressBarState:S,projectInfo:E,hoverText:"text-zinc-300",title:"Textual Tennis",description:"Minimalist, text-based tennis game that simulates real match rules through an interactive web interface",bulletPoints:["Built a React-based text interface to simulate real tennis scoring and match flow","Implemented persistent player data and match history with the LocalStorage API","Developed customizable key bindings for personalized gameplay controls","Designed a minimal UI focused on clarity, usability, and engaging interaction"],textTransitionState:D}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})})]})}function j0({image:i,alt:s,name:r,background:f,hoverBackground:g,hoverText:x,font:b,title:z,description:S,bulletPoints:m,progressBar:E,progressBarState:w,projectInfo:R,textTransitionState:C}){return h.jsx("div",{className:"w-full aspect-square border-2 border-amber-300 rounded-2xl relative",children:h.jsxs("div",{className:`w-full h-full ${f}`,children:[h.jsx("div",{className:"w-full h-full",children:r?h.jsx("div",{className:"p-4 w-full h-full flex justify-center items-center text-center",children:h.jsx("p",{className:`${b} text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl`,children:r})}):h.jsx("img",{className:"w-full h-full p-8",src:i,alt:s})}),h.jsx("div",{className:`absolute right-0 bottom-0 w-full h-full ${g} z-10 transition-all flex justify-center items-center
                                     ${R?"translate-y-0 duration-500 ease-out":"translate-y-full duration-300 ease-in"}`,children:h.jsxs("div",{className:`w-12/12 max-w-4xl rounded-xl p-16 flex flex-col gap-4 ${x} font-sans transition-all
