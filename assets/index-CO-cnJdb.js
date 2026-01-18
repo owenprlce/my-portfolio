@@ -110,7 +110,7 @@ Error generating stack: `+l.message+`
                                 
                                 transition-opacity
                                 
-                                ${s?"duration-300 ease-in opacity-100":"opacity-0"}`,children:[h.jsx("div",{className:"h-full w-full rounded-full outline-2 outline-amber-300",children:h.jsx("img",{className:"w-full h-full object-cover rounded-full bg-zinc-800",src:"/my-portfolio/headshot/me.jpeg",alt:"Portrait",loading:"lazy"})}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})})})}function my({initTransition:i,carousel:s}){return h.jsx("div",{className:`flex justify-center items-start xl:justify-start xl:items-center
+                                ${s?"duration-300 ease-in opacity-100":"opacity-0"}`,children:[h.jsx("div",{className:"h-full aspect-square rounded-full outline-2 outline-amber-300",children:h.jsx("img",{className:"w-full h-full object-cover rounded-full bg-zinc-800",src:"/my-portfolio/headshot/me.jpeg",alt:"Portrait",loading:"lazy"})}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{}),h.jsx("div",{})]})})})}function my({initTransition:i,carousel:s}){return h.jsx("div",{className:`flex justify-center items-start xl:justify-start xl:items-center
 
                         w-full h-full md:h-3/12 md:w-full xl:w-1/2 xl:h-9/12 2xl:h-10/12
 
